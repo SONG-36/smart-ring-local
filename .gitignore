@@ -10,8 +10,10 @@ venv/
 env/
 
 # 3. 本地模拟数据库 (不要把测试脏数据传到云端)
-mock_db/*.db
+*.db
+*.sqlite
 *.sqlite3
+rag_data/
 
 # 4. AWS CDK 构建产物 (云部署时的本地缓存)
 cdk.out/
