@@ -1,0 +1,23 @@
+# 1. 绝对禁止上传的环境变量与密钥
+.env
+*.pem
+
+# 2. Python 缓存与虚拟环境 (垃圾文件)
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# 3. 本地模拟数据库 (不要把测试脏数据传到云端)
+mock_db/*.db
+*.sqlite3
+
+# 4. AWS CDK 构建产物 (云部署时的本地缓存)
+cdk.out/
+.aws-sam/
+
+# 5. IDE 配置文件
+.vscode/
+.idea/
+.DS_Store
